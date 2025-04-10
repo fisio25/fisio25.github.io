@@ -1,0 +1,81 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Imagen siempre visible */
+/* Imagen siempre visible */
+#brain-image {
+    width: 60%;        /* Reduce el tamaño al 60% del ancho del contenedor */
+    max-width: 500px;  /* Máximo tamaño de la imagen será 500px */
+    margin-top: 20px;
+    border-radius: 10px;
+    display: block;    /* Asegura que se comporta como bloque */
+    margin-left: auto; /* Centra la imagen a la izquierda */
+    margin-right: auto; /* Centra la imagen a la derecha */
+}
+
+
+/* Contenedor de los botones */
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap; /* Esto hace que los botones se acomoden en varias filas si no caben */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Estilo de los botones */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    max-width: 200px; /* Limita el ancho de cada botón */
+    width: 100%; /* Los botones pueden ser más pequeños en pantallas más pequeñas */
+}
+
+/* Efecto de hover para los botones */
+button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Contenedor de la información */
+.info-container {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Estilo para el texto dentro de la información */
+.info-container p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Media query para dispositivos pequeños */
+@media (max-width: 600px) {
+    button {
+        width: 45%; /* Los botones ocupan el 45% del ancho en pantallas más pequeñas */
+        font-size: 12px; /* Disminuye el tamaño de la fuente para pantallas pequeñas */
+    }
+    .info-container {
+        width: 90%; /* Los contenedores de información ocupan el 90% del ancho en pantallas pequeñas */
+    }
+}

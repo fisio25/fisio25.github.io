@@ -1,0 +1,169 @@
+/* Estilo para la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.game-container {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin-bottom: 30px; /* Espacio debajo de la imagen */
+}
+
+#brodmann-image {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    max-width: 500px; /* Limita el tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+#question-container {
+    margin-bottom: 30px;
+}
+
+#question-text {
+    font-size: 20px;
+    color: #333;
+}
+
+#result-message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.option-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.option-button:hover {
+    opacity: 0.8;
+}
+
+.option-button:active {
+    transform: scale(0.98); /* Efecto al hacer clic */
+}
+
+#final-message {
+    font-size: 22px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Estilo para los botones */
+.option-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white; /* Color de texto por defecto */
+    border: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 5px;
+    min-width: 100px; /* Establecer un ancho mínimo para los botones */
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+.option-button:hover {
+    opacity: 0.8;
+}
+
+/* Efecto al hacer clic */
+.option-button:active {
+    transform: scale(0.98);
+}
+
+/* Para que el texto sea legible en los colores claros */
+.option-button {
+    color: white;
+}
+
+/* Opciones de colores específicos para mayor legibilidad */
+.option-button[data-color='yellow'],
+.option-button[data-color='orange'] {
+    color: black; /* Para que el texto en amarillo y naranja sea negro */
+}
+
+/* Estilo para el contenedor de botones */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Estilo del botón */
+.buttons-container button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;  /* Color del texto */
+    background-color: #4CAF50;  /* Fondo verde */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Transición suave para la animación */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
+    text-transform: uppercase;  /* Convertir el texto a mayúsculas */
+}
+
+/* Efecto al pasar el mouse (hover) */
+.buttons-container button:hover {
+    background-color: #45a049;  /* Fondo un poco más oscuro */
+    transform: translateY(-5px);  /* Movimiento hacia arriba */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);  /* Sombra más fuerte */
+}
+
+/* Efecto al hacer clic (active) */
+.buttons-container button:active {
+    transform: translateY(2px);  /* Movimiento hacia abajo cuando se hace clic */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra más pequeña */
+}
+
+/* Animación para el primer cargado */
+.buttons-container button {
+    animation: buttonAnim 1s ease-in-out;
+}
+
+/* Definición de la animación */
+@keyframes buttonAnim {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

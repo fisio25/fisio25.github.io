@@ -1,0 +1,161 @@
+/* Estilo general de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal del juego */
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    margin-bottom: 20px;
+    text-align: center;  /* Centra la imagen dentro del contenedor */
+}
+
+/* Imagen del juego - Aumentando el tamaño y centrado */
+#game-image {
+    width: 60%;  /* Ajusta el tamaño de la imagen, 60% del ancho del contenedor */
+    max-width: 500px;  /* Asegura que no sea más grande que 500px */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    margin: 0 auto;  /* Centra la imagen horizontalmente */
+    display: block;
+}
+
+/* Contenedor de las cajas de letras */
+.word-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.word-box {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+/* Estilos para el campo de entrada */
+.input-container {
+    margin-bottom: 20px;
+}
+
+#letter-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+}
+
+#submit-letter {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-letter:hover {
+    background-color: #45a049;
+}
+
+/* Mensajes de resultado */
+.message {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Botón de siguiente nivel */
+#next-level {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-level:hover {
+    background-color: #1976D2;
+}
+
+/* Contenedor de los botones */
+.buttons-container {
+    margin-top: 20px;
+}
+
+.buttons-container a {
+    text-decoration: none;
+}
+
+.buttons-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-container button:hover {
+    background-color: #F4511E;
+}
+
+/* Media query para adaptabilidad en dispositivos móviles */
+@media (max-width: 600px) {
+    .game-container {
+        padding: 15px;
+    }
+
+    #letter-input {
+        width: 40px;
+        font-size: 14px;
+    }
+
+    .word-box {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #submit-letter, #next-level, .buttons-container button {
+        width: 100%;
+    }
+
+    #game-image {
+        width: 80%;  /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    }
+}

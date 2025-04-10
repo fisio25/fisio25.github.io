@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    background-color: #2d3e50;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box {
+    width: 250px;
+    height: 300px;
+    margin: 0 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.imagen {
+    width: 100%;
+    height: 150px;
+    background-color: #eaeaea;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #2d3e50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;  
+}
+
+button:hover {
+    background-color: #1e2a36;
+}
+
+/* Contenedor del botón */
+.buttons-container {
+    text-align: center; /* Asegura que el contenido dentro del contenedor esté centrado */
+  }
+
+
+

@@ -1,0 +1,59 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Estilo del encabezado */
+h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Contenedor de botones */
+.btn_principales {
+    display: flex;
+    flex-wrap: wrap; /* Los botones se acomodarán en filas cuando sea necesario */
+    justify-content: center; /* Los botones estarán centrados */
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 30px;
+    padding: 10px;
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #52c0e4;
+    color: rgb(21, 21, 236);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    max-width: 250px; /* Limitar el ancho de los botones */
+    width: 100%; /* Los botones ocupan el 100% del contenedor en pantallas pequeñas */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #6d12db;
+}
+
+/* Estilo para los enlaces dentro de los botones */
+button a {
+    color: rgb(14, 10, 231);
+    text-decoration: none;
+    display: block;
+    width: 100%; /* Asegura que el enlace ocupe todo el botón */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    button {
+        font-size: 14px; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+}

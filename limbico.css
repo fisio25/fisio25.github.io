@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Para centrar verticalmente tanto la imagen como los botones */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  }
+  
+  .image-right {
+    display: flex;
+    justify-content: center; /* Para centrar la imagen horizontalmente */
+    align-items: center;
+    flex: 1;
+  }
+  
+  .image-right img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .buttons-group {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;
+  }
+  
+  .buttons-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .morado {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #460a4e; /* Color del borde */
+    background-color: rgba(96, 33, 86, 0.61); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+
+  .morado2 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #d518e7; /* Color del borde */
+    background-color: rgba(192, 62, 218, 0.562); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+
+  .verde {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #16b01ede; /* Color del borde */
+    background-color: rgba(108, 245, 110, 0.553); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+
+  .rojo {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #FF4500; /* Color del borde */
+    background-color: rgba(255, 69, 0, 0.4); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+
+  .amarillo {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #f1ee31; /* Color del borde */
+    background-color: rgba(241, 241, 77, 0.543); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+
+  .azul {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #0e64f9; /* Color del borde */
+    background-color: rgba(58, 167, 244, 0.772); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+
+  .azul2 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #322cf6; /* Color del borde */
+    background-color: rgba(63, 75, 244, 0.4); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+  
+  button:hover {
+    background-color: #FF4500; /* Cambia al color fuerte al pasar el cursor */
+    color: #fff; /* Cambia el texto a blanco */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  /* Estilo para el recuadro de la información */
+#info-container {
+  display: none; /* Inicialmente está oculto */
+  position: absolute;
+  top: 90%; /* Se coloca debajo de la imagen */
+  left: 75%;
+  transform: translateX(-50%);
+  background-color: rgba(124, 245, 241, 0.8);
+  color: rgb(242, 36, 36);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+
+  /* Contenedor para los botones, para alinearlos horizontalmente */
+  div.buttons-container {
+    display: flex; /* Hacer que los botones estén en una fila */
+    justify-content: center; /* Alinear los botones en el centro */
+    gap: 10px; /* Espaciado entre botones */
+  }
+
+  button {
+    color: #d518e7;
+    background-color: rgb(118, 243, 118);
+  }

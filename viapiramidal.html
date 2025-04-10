@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="viapiramidal.css">
+    <title>Via piramidal</title>
+</head>
+<body>
+    <!-- Imagen siempre visible -->
+    <h1>Via piramidal</h1>
+    <img src="img/viaPiramidal.jpg" alt="Unipolar" id="brain-image">
+
+    <!-- Botones que desplegarán la información -->
+    <div class="buttons-container">
+        <button onclick="mostrarInformacion('Area4')">Área 4</button>
+        <button onclick="mostrarInformacion('capsulaInterna')">Brazo Posterior de la Cápsula Interna</button>
+        <button onclick="mostrarInformacion('pedunculo')">Pedúnculo Cerebral</button>
+        <button onclick="mostrarInformacion('porciónBasilar')">Porción Basilar del Puente</button>
+        <button onclick="mostrarInformacion('piramideBulbar')">Pirámide Bulbar</button>
+        <button onclick="mostrarInformacion('decusacion')">Decusación de las Pirámides</button>
+        <button onclick="mostrarInformacion('tracto')">Tracto Corticoespinal Lateral</button>
+        <button onclick="mostrarInformacion('tractoVentral')">Tracto Corticoespinal Ventral (Anterior)</button>
+    </div>
+
+    <!-- Información desplegable -->
+    <div id="Area4" class="info-container">
+        <p><b>Localizada en el lóbulos frontal, específicamente en el giro precentral. Aquí se originan las neuronas motoras superiores encargadas del movimiento voluntario.</b></p>
+    </div>
+
+    <div id="capsulaInterna" class="info-container">
+        <p><b>Zona de fibras nerviosas que llevan la información desde la corteza hacia el tronco encefálico y la médula.  Es una estructura clave porque cualquier lesión aquí puede afectar grandes regiones del cuerpo.</b></p>
+    </div>
+
+    <div id="pedunculo" class="info-container">
+        <p><b>Parte del tronco encefálico por donde pasa el tracto corticoespinal descendente.</b></p>
+    </div>
+
+    <div id="porciónBasilar" class="info-container">
+        <p><b>Las fibras siguen descendiendo a través de esta parte del puente (protuberancia).
+        </b></p>
+    </div>
+
+    <div id="piramideBulbar" class="info-container">
+        <p><b>Se encuentran en el bulbo raquídeo. Las fibras se agrupan aquí justo antes de cruzar al lado opuesto.
+         </b></p>
+    </div>
+
+    <div id="decusacion" class="info-container">
+        <p><b>Punto en el que aproximadamente el 85-90% de las fibras cruzan al lado opuesto (contralateral). xºxLo que explica por qué un daño en el hemisferio derecho del cerebro afecta el lado izquierdo del cuerpo.
+        </b></p>
+    </div>
+    
+    <div id="tracto" class="info-container">
+        <p><b>Fibras que ya cruzaron en la decusación y descienden por el lado opuesto de la médula. Controla movimientos finos y precisos, especialmente de extremidades.
+        </b></p>
+    </div>
+
+    <div id="tractoVentral" class="info-container">
+        <p><b>Fibras que no cruzan en la decusación, sino que lo hacen más abajo en la médula. Participan en el control de músculos axiales (tronco, cuello).</b></p>
+    </div>
+
+    <div class="buttons-container">
+        <a href="index.html"><button>Menu principal</button></a>
+      </div>
+      
+    
+    <script src="viapiramidal.js"></script>
+</body>
+</html>

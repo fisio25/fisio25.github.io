@@ -1,0 +1,97 @@
+/* Estilo global para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f069b3db; /* Fondo de color suave (blanco/azul claro) */
+    color: #333; /* Color del texto principal */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra todo el contenido verticalmente */
+    align-items: center; /* Centra todo el contenido horizontalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    text-align: center;
+}
+
+/* Estilo para la imagen */
+img {
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen al 80% */
+    height: auto;
+    display: block;
+    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilo para el título h1 */
+h1 {
+    font-size: 2.5em;
+    color: #2d3e50; /* Color oscuro para el título */
+    margin-top: 20px;
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* Estilo para los textos que se despliegan */
+.textos {
+    display: none; /* Ocultos por defecto */
+    margin-top: 20px;
+    text-align: left;
+    background-color: rgba(97, 64, 244, 0.724);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    max-width: 80%; /* Ajusta el ancho al 80% */
+}
+
+/* Estilo para los párrafos dentro de los textos */
+.textos p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Estilo para los enlaces (si decides usar uno para mostrar los textos) */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilo base de los botones */
+a button {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    display: inline-block; /* Los botones estarán uno junto al otro */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    margin: 10px; /* Espaciado entre botones */
+    cursor: pointer; /* Cursor de mano al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transición suave para la animación */
+  }
+  
+  /* Contenedor para los botones, para alinearlos horizontalmente */
+  div.buttons-container {
+    display: flex; /* Hacer que los botones estén en una fila */
+    justify-content: center; /* Alinear los botones en el centro */
+    gap: 10px; /* Espaciado entre botones */
+  }
+  
+  /* Efecto de hover: cambia el color de fondo y aplica una pequeña animación */
+  a button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+    transform: scale(1.1); /* Agrandar ligeramente el botón */
+  }
+  
+  /* Efecto de foco para mejorar la accesibilidad */
+  a button:focus {
+    outline: none; /* Eliminar el contorno por defecto */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Resaltar el botón con sombra azul */
+  }

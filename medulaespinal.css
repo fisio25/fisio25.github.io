@@ -1,0 +1,128 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Estilos para la imagen */
+#interactive-image {
+    max-width: 50%;  /* Cambié el tamaño máximo a 50% */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la información */
+.info-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de información */
+.section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+ul li b {
+    color: #2980b9;
+}
+
+/* Estilos de enlaces */
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos generales del botón */
+.styled-button {
+    background-color: #3498db; /* Color de fondo */
+    color: #fff; /* Texto blanco */
+    font-size: 1rem; /* Tamaño de fuente */
+    padding: 12px 24px; /* Relleno */
+    border: none; /* Sin borde */
+    border-radius: 25px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero al pasar por encima */
+    transition: all 0.3s ease; /* Transición suave para los efectos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Efecto cuando el cursor pasa sobre el botón */
+.styled-button:hover {
+    background-color: #2980b9; /* Color de fondo cuando se pasa el cursor */
+    transform: scale(1.1); /* Aumento de tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Efecto cuando el botón es presionado */
+.styled-button:active {
+    transform: scale(0.98); /* Efecto de compresión al presionar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Sombra más pequeña */
+}
+
+/* Animación de aparición del botón */
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: 30px;
+    animation: fadeIn 1s ease-out; /* Animación de aparición */
+}
+
+/* Animación de aparición (fadeIn) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Desplazamiento hacia abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Vuelve a la posición original */
+    }
+}
+

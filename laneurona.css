@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Para centrar verticalmente tanto la imagen como los botones */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  }
+  
+  .image-right {
+    display: flex;
+    justify-content: center; /* Para centrar la imagen horizontalmente */
+    align-items: center;
+    flex: 1;
+  }
+  
+  .image-right img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .buttons-group {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;
+  }
+  
+  .buttons-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #ec3aab; /* Color del borde */
+    background-color: rgba(235, 65, 206, 0.598); /* Relleno más transparente */
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Para la animación */
+  }
+  
+  button:hover {
+    background-color: #87f1f1c1; /* Cambia al color fuerte al pasar el cursor */
+    color: #fff; /* Cambia el texto a blanco */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  /* Estilo para el recuadro de la información */
+#info-container {
+  display: none; /* Inicialmente está oculto */
+  position: absolute;
+  top: 90%; /* Se coloca debajo de la imagen */
+  left: 71%;
+  transform: translateX(-50%);
+  background-color: rgba(85, 244, 154, 0.715);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 750px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+
+  /* Contenedor para los botones, para alinearlos horizontalmente */
+  div.buttons-container {
+    display: flex; /* Hacer que los botones estén en una fila */
+    justify-content: center; /* Alinear los botones en el centro */
+    gap: 10px; /* Espaciado entre botones */
+  }
